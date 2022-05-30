@@ -9,7 +9,7 @@ A basic API stub is available via `yarn api`. This provides two endpoints at `lo
 
 ## API service (http://localhost:3005)
 
-### `GET /api/appointment`
+### `GET /api/appointments`
 
 No params required. Will return a list of available appointments:
 
@@ -24,9 +24,9 @@ No params required. Will return a list of available appointments:
 }
 ```
 
-### `POST /api/appointment`
+### `POST /api/appointments`
 
-Posting the `date` back to `/api/appointment` will return a `200` confirmation;
+Posting the `date` back to `/api/appointments` will return a `200` confirmation;
 
 ```json
 {
