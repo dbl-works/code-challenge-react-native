@@ -20,7 +20,11 @@ app.get('/api/appointments', (req, res) => {
 app.post('/api/appointments', (req, res) => {
   const date = DateTime.fromISO(req.body.date) // TODO: Verification
 
-  if (date < DateTime.now()) {
+  if (Math.random() > 0.7) {
+    res.status(500).json({
+      error: 'Could not book appointment',
+    })
+  } else if (date < DateTime.now()) {
     res.status(400).json({
       error: 'Appointment cannot be in the past',
     })
