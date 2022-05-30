@@ -63,7 +63,7 @@ describe('POST /api/appointments', () => {
     })
 
     it('books the given appointment if available', async () => {
-      const {id, date, vet} = appointments.valid;
+      const {id, date, vet} = appointments.valid
       await request(app)
         .post('/api/appointments')
         .send({id: appointments.valid.id})

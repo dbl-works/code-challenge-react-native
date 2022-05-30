@@ -1,0 +1,6 @@
+---
+root: false
+extends: eslint:recommended
+rules:
+  semi:
+    - never

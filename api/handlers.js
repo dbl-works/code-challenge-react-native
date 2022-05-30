@@ -47,7 +47,7 @@ exports.createAppointment = async (req, res) => {
       error: 'Could not book appointment',
     })
   } else {
-    let appointment;
+    let appointment
     await new Promise((resolve) => {
       db.run('UPDATE appointments SET available = 0, client_id = ? WHERE id = ?', [clientId, req.body.id], () => {
         db.get('SELECT id, "date", vet FROM appointments WHERE id = ?', id, (err, row) => {
