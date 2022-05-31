@@ -1,0 +1,26 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Simple stateful mock API service",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "setup": "node ./setup_database.js",
+    "start": "node ./index.js",
+    "test": "npx jest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "luxon": "^2.4.0",
+    "sqlite3": "^5.0.8",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "supertest": "^6.2.3"
+  }
+}
