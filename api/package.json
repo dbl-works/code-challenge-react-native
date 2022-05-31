@@ -6,8 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "setup": "node ./setup_database.js",
-    "start": "node ./index.js",
+    "start": "node ./setup_database.js; node ./index.js",
     "test": "npx jest",
     "postinstall": "yarn setup"
   },
@@ -23,5 +22,6 @@
   "devDependencies": {
     "jest": "^28.1.0",
     "supertest": "^6.2.3"
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }
