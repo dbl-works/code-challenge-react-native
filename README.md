@@ -8,8 +8,7 @@ You have been provided with a simplistic Expo set up utilising NativeBase UI ele
 A basic API stub is available in the `./api` directory. To run:
 
 ```shell
-cd ./api
-yarn setup && yarn start
+cd ./api && yarn && yarn setup && yarn start
 ```
 
 This provides three endpoints at `localhost:3005`.
