@@ -8,7 +8,8 @@
   "scripts": {
     "setup": "node ./setup_database.js",
     "start": "node ./index.js",
-    "test": "npx jest"
+    "test": "npx jest",
+    "postinstall": "yarn setup"
   },
   "engines": {
     "node": ">=14.0.0"
