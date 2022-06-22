@@ -7,8 +7,7 @@
   "private": true,
   "scripts": {
     "start": "node ./setup_database.js; node ./index.js",
-    "test": "npx jest",
-    "postinstall": "yarn setup"
+    "test": "npx jest"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -22,6 +21,5 @@
   "devDependencies": {
     "jest": "^28.1.0",
     "supertest": "^6.2.3"
-  },
-  "packageManager": "yarn@3.2.1"
+  }
 }
