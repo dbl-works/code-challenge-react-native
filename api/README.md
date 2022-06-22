@@ -9,12 +9,11 @@ Some endpoints may return errors - it is up to you to handle them properly.
 ## Quick start
 
 ```shell
+yarn install
 yarn start
 ```
 
-**Note:** Yarn PNP should already be set up, meaning no need to run `yarn install` first.
-
-This provides three endpoints at `localhost:3005`.
+This provides three endpoints at `http://localhost:3005`.
 
 ## API service (http://localhost:3005)
 
