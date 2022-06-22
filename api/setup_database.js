@@ -13,7 +13,10 @@ const randomVet = () => {
   return vets[Math.floor(Math.random() * vets.length)]
 }
 
+console.log('Seeding database...');
+
 db.serialize(() => {
+
   db.run('CREATE TABLE IF NOT EXISTS appointments (id BLOB PRIMARY KEY, vet TEXT, "date" TEXT, available INTEGER, client_id BLOB)')
   db.run('DELETE FROM appointments')
 

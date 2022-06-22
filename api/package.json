@@ -6,8 +6,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "setup": "node ./setup_database.js",
-    "start": "node ./index.js",
+    "start": "node ./setup_database.js; node ./index.js",
     "test": "npx jest"
   },
   "engines": {
